@@ -2,7 +2,7 @@
 require 'pdo.php';
 
 // Check if viewing a bundle
-$slug = $_GET['s'] ?? null;
+$slug = $_GET['slug'] ?? null;// because parameter name same 
 if ($slug) {
     $stmt = $pdo->prepare("SELECT b.bundle_name, l.link_title, l.destination_url 
                            FROM bundles b 
