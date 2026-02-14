@@ -23,9 +23,7 @@ if ($slug) {
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../images/favicon.png">
-    <style>
-        <style>
-    body { background: #020617; color: #f8fafc; font-family: sans-serif; transition: 0.3s; }
+    <style>    body { background: #020617; color: #f8fafc; font-family: sans-serif; transition: 0.3s; }
 
     body.light {
         background: #f8fafc;
@@ -60,7 +58,6 @@ if ($slug) {
         background: #e2e8f0;
         color: #020617;
     }
-</style>
         body { background: #020617; color: #f8fafc; font-family: sans-serif; }
         .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(59, 130, 246, 0.2); }
         .blue-glow { box-shadow: 0 0 30px rgba(37, 99, 235, 0.2); }
