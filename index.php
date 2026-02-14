@@ -17,22 +17,94 @@ if ($slug) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic Meta -->
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LinkBolt | Bundle Your World</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="LinkBolt lets you bundle all your important links into one powerful, shareable hub. Clean, fast, and customizable.">
+    <meta name="keywords" content="link in bio, link bundler, social links, creator tools, personal branding">
+    <meta name="author" content="LinkBolt">
+    <meta name="theme-color" content="#020617">
+
+    <!-- Open Graph (Facebook, LinkedIn, Discord) -->
+    <meta property="og:title" content="LinkBolt | Bundle Your World">
+    <meta property="og:description" content="Bundle all your links into one powerful, customizable hub.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta property="og:image" content="https://yourdomain.com/images/preview.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LinkBolt | Bundle Your World">
+    <meta name="twitter:description" content="Bundle all your links into one powerful hub.">
+    <meta name="twitter:image" content="https://yourdomain.com/images/preview.png">
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Modern Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Styles -->
     <style>
-        body { background: #020617; color: #f8fafc; font-family: sans-serif; }
-        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(59, 130, 246, 0.2); }
-        .blue-glow { box-shadow: 0 0 30px rgba(37, 99, 235, 0.2); }
-        .accent-blue { background: #2563eb; }
-        .accent-blue:hover { background: #1d4ed8; }
-        .input-box { background: #0f172a; border: 1px solid #1e293b; color: white; transition: 0.2s; }
-        .input-box:focus { border-color: #3b82f6; outline: none; box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2); }
+        body {
+            background: radial-gradient(circle at top, #0f172a 0%, #020617 60%);
+            color: #f8fafc;
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .glass {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+        }
+
+        .blue-glow {
+            box-shadow: 0 0 30px rgba(37, 99, 235, 0.25);
+        }
+
+        .accent-blue {
+            background: #2563eb;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .accent-blue:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+        }
+
+        .input-box {
+            background: #0f172a;
+            border: 1px solid #1e293b;
+            color: white;
+            transition: 0.2s;
+        }
+
+        .input-box:focus {
+            border-color: #3b82f6;
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
+
 <body class="min-h-screen p-4 md:p-10 flex flex-col items-center">
 
     <?php if ($slug): ?>
