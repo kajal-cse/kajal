@@ -72,7 +72,7 @@ if ($slug) {
                 <!-- Creator Panel -->
                 <div class="glass p-6 rounded-3xl blue-glow">
                     <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
-                        <span class="w-2 h-6 accent-blue rounded-full"></span> New Bundle
+                        <span class="w-2 h-6 accent-blue rounded-full"></span>  Add New Bundle
                     </h2>
                     <div class="space-y-4">
                         <input type="text" id="b-name" placeholder="Bundle Name (e.g. My Socials)" class="w-full p-3 rounded-xl input-box">
@@ -97,8 +97,9 @@ if ($slug) {
 
                 <!-- History Panel -->
                 <div>
-                    <h2 class="text-xl font-bold mb-4 text-slate-400">Your Active Bolts</h2>
+                    <h2 class="text-xl font-bold mb-4 text-slate-400">List of Your Active Bolts</h2>
                     <div id="my-bundles" class="space-y-4">
+                        
                         <!-- Loaded via JS -->
                     </div>
                 </div>
