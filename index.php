@@ -89,7 +89,7 @@ if ($slug) {
                             <button onclick="addLinkField()" class="text-xs text-blue-400 hover:text-blue-300">+ Add Another URL</button>
                         </div>
 
-                        <button onclick="createBundle()" class="w-full accent-blue p-4 rounded-xl font-bold text-white mt-4 shadow-lg active:scale-95 transition-all">
+                        <button onclick="createBundle()" class="w-full accent-blue p-4 rounded-xl font-bold text-black mt-4 shadow-lg active:scale-95 transition-all">
                             CREATE BOLT LINK
                         </button>
                     </div>
